@@ -2,13 +2,13 @@ import smtplib
 from email.utils import formatdate
 from email.mime.text import MIMEText
 
-sender = '*****@gmail.com'
-receiver = '******@gmail.com'
+sender = 'mike@michaelehuber.com'
+receiver = 'brainmanmike@gmail.com'
 
-message = "USER MIKE RFID Logon" 
+message = "Hello World" 
 msg = MIMEText(message)
 
-msg['Subject'] = 'Someone logged onto USER MIKE on your laptop using RFID'
+msg['Subject'] = 'Testmessage'
 msg['From'] = sender
 msg['To'] = receiver
 msg["Date"] = formatdate(localtime=True)
